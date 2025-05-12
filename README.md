@@ -1,40 +1,124 @@
-# Face-Mask-Detector 😷
+Here’s a clean and professional `README.md` file for the [Mask-Detector GitHub repository](https://github.com/avinashkranjan/Mask-Detector), suitable for both documentation and inclusion in your resume or portfolio.
 
-`As declared by WHO the COVID-19 is going to remain around for about 2 years. So proper precautions are going to be necessary. This ML python based surveillance system detects if people/person are/is not wearing mask and follows them wherever reachable and plays beeping sound if a person is found without a mask.`
+---
 
-## Important Links: 🔗
-### For Live Preview --> [YouTube](https://www.youtube.com/watch?v=rLtgvNlIurs)
-### Data Used For Training --> [DataSet](https://drive.google.com/drive/folders/1R0EDMoUlvmdTXCY2slUmpJ0i-5EuKuvH?usp=sharing)
+````markdown
+# 😷 Face Mask Detector
 
+A real-time Face Mask Detection system using computer vision and deep learning, built with Python, OpenCV, and TensorFlow/Keras. The model detects whether people in a video stream are wearing face masks or not.
 
-## How You Run it Locally? 🤔
+---
 
-### Step 1:
-    Go To Your Terminal and Clone the Repository 
-`git clone https://github.com/avinashkranjan/Mask-Detection`
+## 📌 Features
 
-![Screenshot (168)](https://user-images.githubusercontent.com/55796944/91657556-7f259f00-eadf-11ea-8670-837982ded836.jpg)
+- Real-time mask detection using webcam
+- Trained deep learning model using TensorFlow and Keras
+- Haarcascade and CNN-based face detection
+- Color-coded bounding boxes (Green = Mask, Red = No Mask)
+- Easy-to-run script with webcam or image/video input support
 
-### Step 2:
-    cd Mask-Detection
+---
 
-![Screenshot (169)](https://user-images.githubusercontent.com/55796944/91657820-d9bffa80-eae1-11ea-90fe-893fdcff1f31.jpg)
+## 🛠️ Tech Stack
 
-### Step 3:
-    pip3 install -r requirements
-    
-![Screenshot (170)](https://user-images.githubusercontent.com/55796944/91657818-d75da080-eae1-11ea-86bb-5e0274b854bd.jpg)
-    
-### Step 4:
-    python mask_detector.py
-    
-![Screenshot (171)](https://user-images.githubusercontent.com/55796944/91657819-d9276400-eae1-11ea-8e9f-c31030515dd4.jpg)
+- Python
+- TensorFlow / Keras
+- OpenCV
+- NumPy
+- Matplotlib
+- Haarcascade Classifier
 
-## Samples
+---
 
-### No Mask 
-![Screenshot (172)](https://user-images.githubusercontent.com/55796944/91657903-944ffd00-eae2-11ea-99e7-c4f847d61a16.jpg)
+## 📥 Installation
 
-### With Mask 
-![Screenshot (173)](https://user-images.githubusercontent.com/55796944/91657904-95812a00-eae2-11ea-9283-ea20553378e4.jpg)
+1. **Clone the Repository**
 
+```bash
+git clone https://github.com/avinashkranjan/Mask-Detector.git
+cd Mask-Detector
+````
+
+2. **Install Required Libraries**
+
+It's recommended to use a virtual environment.
+
+```bash
+pip install -r requirements.txt
+```
+
+If `requirements.txt` is missing, manually install:
+
+```bash
+pip install opencv-python tensorflow keras numpy matplotlib
+```
+
+---
+
+## ▶️ How to Run
+
+### Real-time detection from webcam:
+
+```bash
+python detect_mask_video.py
+```
+
+### Detection on an image:
+
+```bash
+python detect_mask_image.py --image path_to_image.jpg
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Mask-Detector/
+├── dataset/                # Training dataset
+├── face_detector/          # Face detection models
+├── detect_mask_image.py    # Detect mask on static images
+├── detect_mask_video.py    # Detect mask in real-time via webcam
+├── train_mask_detector.py  # Model training script
+├── mask_detector.model     # Trained model file
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 📈 Model Training
+
+To retrain the model:
+
+```bash
+python train_mask_detector.py
+```
+
+Make sure the dataset is structured correctly in the `dataset/` folder.
+
+---
+
+## 📸 Demo
+
+![Mask Detection Demo](https://github.com/avinashkranjan/Mask-Detector/blob/master/demo/demo-mask.gif)
+
+---
+
+## 🙋‍♂️ Author
+
+Developed by [Avinash Ranjan](https://github.com/avinashkranjan)
+Forked or customized version maintained by [Your Name](https://github.com/yourusername)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+```
+
+---
+
+Would you like me to generate this as a downloadable file for your project directory?
+```
