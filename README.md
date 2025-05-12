@@ -1,6 +1,4 @@
-Here’s a clean and professional `README.md` file for the [Mask-Detector GitHub repository](https://github.com/avinashkranjan/Mask-Detector), suitable for both documentation and inclusion in your resume or portfolio.
-
----
+😷 Face Mask Detector
 
 ````markdown
 # 😷 Face Mask Detector
